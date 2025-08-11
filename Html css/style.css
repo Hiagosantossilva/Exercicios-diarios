@@ -1,0 +1,30 @@
+:root{
+    --primary: #fff;
+    --bg-color: rgba(0, 0, 0, 0.8);
+    --bg-envelope-tab: #ecdeb8;
+    --bg-envelope-color: #f5edd1;
+    --envelope-cover: #e6cfa7;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --text-color: #444;
+    --heart-color: rgba(255, 8, 231);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    place-items: center;
+    display: flex;
+    background: var(--bg-color);
+    align-items: center;
+    justify-content: center;
+}
+.container > .envelope-wrapper{
+    background-color: var(--bg-envelope-color);
+    box-shadow:  0 09 40px var(--shadow-color );
+}
+
+.container > .envelope-wrapper > .envelope{
+    position: relative;
+    width:  300px;
+}
