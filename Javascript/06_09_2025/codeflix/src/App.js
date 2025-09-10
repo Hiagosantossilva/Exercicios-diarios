@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Tmdb from './Tmdb';
 
-function App() {
+export default () => {
+
+  const [movieList, setMovieList] = useEffect([]);
+
+  useEffect(() => {
+    const loadAll = async () => {
+      // Pegando a lista TOTAL
+      let list = await Tmdb.getHomeList();
+      console.log(list);
+
+    }
+  }, []);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page">
+      Olá Mundo!
     </div>
   );
 }
-
-export default App;
