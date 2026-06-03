@@ -43,6 +43,23 @@ public class Main{
         else{
             System.out.println("Falso");
         }
+        //-------------------Loops-------------------
+        String[] nomesArr = new String[10];
+        nomesArr[0] = "fernanda";
+        for (int meuIterador = 0; meuIterador < nomesArr.length; meuIterador++){
+            System.out.println(nomesArr[meuIterador]);
+        }
+        int contador = 0;
+        while(contador < 9){
+            System.out.println("Estou no while");
+            contador++;
+        }
+        double resultado = 0.0;
+        int resultadoInt = (int) resultado;
+
+        String meuString = "10";
+        int meuInt2 = Integer.parseInt(meuString);
+
     }
 
 }
